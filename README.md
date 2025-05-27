@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wealth Building Tracking System</title>
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="./manifest.json">
     <style>
         /* Reset CSS */
         * {
@@ -1822,7 +1822,7 @@
         // Pendaftaran Service Worker
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
+                navigator.serviceWorker.register('./sw.js') // Path relatif
                     .then(registration => {
                         console.log('ServiceWorker registered: ', registration.scope);
                     })
